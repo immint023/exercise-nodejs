@@ -1,0 +1,5 @@
+1. Practice make perfect.
+2. Code update API : /users/update/:id  - req.body
+3. Code api method Get, name '/users/search/:name'. Return user with name equal to name passed in params
+4. Code api method Get, name '/users/search/:name'. Return user with name similar to name passed in params "so" => "Son" 
+//note return array of user in search api
