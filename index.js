@@ -140,8 +140,7 @@ app.post('/users/post', async function (req, res) {
 app.delete('/users/delete/:id', async (req, res) => {
   try {
     let userId = parseInt(req.params.id);
-    let users = await readFileSync('./data/users.json');
-    let listUsers = JSON.parse(users);
+    let listUsers = await readFileSync('./data/users.json');
     let indexOfUser = getIndexOfUserById(listUsers, userId);
 
     if (!userId) {
